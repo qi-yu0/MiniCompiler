@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "compile",
+            "command": "gcc",
+            "args": [
+                "-g",
+                // "${file}",
+                "${fileDirname}\\prog.c",
+                "${fileDirname}\\bool.c",
+                "${fileDirname}\\expr.c",
+                "${fileDirname}\\lex.c",
+                "${fileDirname}\\stmts.c",
+                "${fileDirname}\\decls.c",
+                "${fileDirname}\\tree.h",
+                "-o",
+                // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\prog.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+prog
+decls
+int
+a
+bool
+d
+stmts
+=
+a
+1
+=
+d
+a
